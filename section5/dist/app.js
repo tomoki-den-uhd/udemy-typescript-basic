@@ -1,10 +1,40 @@
 "use strict";
-const num = 6;
-// if (num % 2 === 0){
-//     if(num % 3 === 0){
-//         console.log(`${num}は2の倍数、かつ、3の倍数です`)
-//     }
+let num = 3;
+// switch(num) {
+//     case 1:
+//         console.log('Gold');
+//         break;
+//     case 2:
+//         console.log('Silver');
+//         break;
+//     case 3:
+//         console.log('Bronze');
+//         break;
+//     case 4:
+//         console.log('4th');
+//         break;
+//     case 5:
+//         console.log('5th');
+//         break;
+//     default:
+//         console.log('Other');
+//         break;
 // }
-if ((num % 2 === 0) && (num % 3 === 0)) {
-    console.log(`${num}は2の倍数、かつ、3の倍数です`);
+if (num === 1) {
+    console.log('Gold');
+}
+else if (num === 2) {
+    console.log('Silver');
+}
+else if (num === 3) {
+    console.log('Bronze');
+}
+else if (num === 4) {
+    console.log('4th');
+}
+else if (num === 5) {
+    console.log('5th');
+}
+else {
+    console.log('Other');
 }
