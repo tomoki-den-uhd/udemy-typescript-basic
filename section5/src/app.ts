@@ -1,20 +1,10 @@
-// && 論理AND
-// console.log(true && true);
-// console.log(true && false);
-// console.log(false && true);
-// console.log(false && false);
+const num = 6; 
+// if (num % 2 === 0){
+//     if(num % 3 === 0){
+//         console.log(`${num}は2の倍数、かつ、3の倍数です`)
+//     }
+// }
 
-// || 論理OR
-// console.log(true || true);
-// console.log(true || false);
-// console.log(false || true);
-// console.log(false || false);
-
-//! 論理NOT
-// console.log(!true);
-// console.log(!false);
-
-//　! && ||の順で優先される
-
-console.log(false && true || true);
-console.log(false && (true || true));
+if ((num % 2 === 0 ) && (num % 3 === 0)){
+    console.log(`${num}は2の倍数、かつ、3の倍数です`)
+}
