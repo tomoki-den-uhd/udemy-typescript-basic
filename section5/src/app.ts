@@ -1,31 +1,13 @@
-//以上
-const a = 100;
-if (a >= 100) {
-    console.log('100以上');
-}
+const mass = 60;
+const height = 1.7;
+const bmi = mass / (height * height);
 
-//より大きい
-const b = 101;
-if (b > 100) {
-    console.log('100より大きい');
-}
+console.log(bmi);
 
-const c = 100;
-if (c <= 100) {
-    console.log('100以下')
-}
-
-const d = 99;
-if (d < 100) {
-    console.log('100未満');
-}
-
-const e = 100;
-if (e === 100) {
-    console.log('100と等しい');
-}
-
-let f = 111;
-if ( f !== 100) {
-    console.log('等しくない')
+if (bmi >= 25) {
+    console.log('肥満');
+} else if (bmi >= 18.5) {
+    console.log('普通');
+} else {
+    console.log('痩せ');
 }
