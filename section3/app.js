@@ -1,12 +1,15 @@
-var color;
-var colorNmae; //キャメルケース, ローワーキャメルケース
-var myColorName;
-var favoriteFood = 20; // bad
-var _color;
-var $name; //上級者向けなの使わあい方がいい
-var name1; //避けた方がいい
-var _nmae1; //避けた方がいい
-var foo = 'small';
-var Foo = 'big';
-console.log(foo);
-console.log(Foo);
+var color = 'red';
+console.log(color);
+console.log(typeof (color));
+var num = 123;
+console.log(num);
+console.log(typeof (num));
+var dec = 456.789;
+console.log(dec);
+console.log(typeof (dec));
+var b = true;
+console.log(b);
+console.log(typeof (b));
+b = false;
+console.log(b);
+console.log(typeof (b));

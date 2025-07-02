@@ -1,20 +1,20 @@
-let color;
-let colorNmae; //キャメルケース, ローワーキャメルケース
-let myColorName;
+let color:string = 'red';
+console.log(color);
+console.log(typeof(color));
 
-let favoriteFood = 20; // bad
+let num:number = 123;
+console.log(num);
+console.log(typeof(num));
 
-let _color;
-let $name; //上級者向けなの使わあい方がいい
+let dec = 456.789;
+console.log(dec);
+console.log(typeof(dec));
 
-let name1; //避けた方がいい
-let _nmae1; //避けた方がいい
+let b: boolean = true;
 
-let foo = 'small';
-let Foo = 'big';
+console.log(b);
+console.log(typeof(b));
 
-console.log(foo);
-console.log(Foo);
-
-//　予約後
-// let const = 'abc';
+b = false;
+console.log(b);
+console.log(typeof(b));
