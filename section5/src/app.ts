@@ -1,13 +1,20 @@
-const mass = 60;
-const height = 1.7;
-const bmi = mass / (height * height);
+// && 論理AND
+// console.log(true && true);
+// console.log(true && false);
+// console.log(false && true);
+// console.log(false && false);
 
-console.log(bmi);
+// || 論理OR
+// console.log(true || true);
+// console.log(true || false);
+// console.log(false || true);
+// console.log(false || false);
 
-if (bmi >= 25) {
-    console.log('肥満');
-} else if (bmi >= 18.5) {
-    console.log('普通');
-} else {
-    console.log('痩せ');
-}
+//! 論理NOT
+// console.log(!true);
+// console.log(!false);
+
+//　! && ||の順で優先される
+
+console.log(false && true || true);
+console.log(false && (true || true));
