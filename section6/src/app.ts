@@ -1,5 +1,11 @@
-function rectanlge(height:number , width:number) : number {
+function getRectanlge(height:number , width:number) {
     return height * width;
 }
 
-console.log(rectanlge(3,5))
+console.log(getRectanlge(4,5));
+
+function hello() {
+    console.log('Hello!');
+}
+
+hello();

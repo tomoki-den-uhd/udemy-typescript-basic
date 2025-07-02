@@ -1,5 +1,9 @@
 "use strict";
-function rectanlge(height, width) {
+function getRectanlge(height, width) {
     return height * width;
 }
-console.log(rectanlge(3, 5));
+console.log(getRectanlge(4, 5));
+function hello() {
+    console.log('Hello!');
+}
+hello();
