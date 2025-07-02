@@ -1,5 +1,5 @@
 "use strict";
-const callculate = (fruitPrice, itemCount) => {
-    return fruitPrice * itemCount;
+const displayMessage = () => {
+    console.log('Timeout!');
 };
-console.log(callculate(100, 20));
+setTimeout(displayMessage, 3000);

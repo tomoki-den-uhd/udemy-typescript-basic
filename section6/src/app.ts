@@ -1,4 +1,5 @@
-const callculate = (fruitPrice: number, itemCount: number) => {
-    return fruitPrice * itemCount;
+const displayMessage = () => {
+    console.log('Timeout!');
 };
-console.log(callculate(100,20));
+
+setTimeout(displayMessage, 3000);
