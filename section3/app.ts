@@ -1,20 +1,9 @@
-let color:string = 'red';
-console.log(color);
+const color = 'red';
 console.log(typeof(color));
 
-let num:number = 123;
-console.log(num);
+const num = 123;
 console.log(typeof(num));
 
-let dec = 456.789;
-console.log(dec);
-console.log(typeof(dec));
-
-let b: boolean = true;
-
-console.log(b);
+const b = true;
 console.log(typeof(b));
 
-b = false;
-console.log(b);
-console.log(typeof(b));
