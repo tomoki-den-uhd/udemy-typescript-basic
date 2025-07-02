@@ -1,10 +1,8 @@
-console.log('Hello! I\'m Yuta Nakamura.');
+let color: string = 'Red';
+console.log(color);
 
-console.log('\¥ \t AAA \n BBB');
+color = 'Green';
+console.log(color);
 
-console.log("Hello! I'm Yuta Nakamura.");
-
-console.log('こんにちは!"中村"さん');
-
-console.log('Hello');
-console.log("Hello");
+// let color: string = 'Blue';
+// color = 255;
