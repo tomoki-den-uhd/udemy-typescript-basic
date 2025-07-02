@@ -1,23 +1,10 @@
-//足し算
-let num = 20;
-num = num + 10;
-// console.log(num);
+const x = 1;
+const y = 2;
+const z = 3;
 
-let num1 =20;
-num1 += 10;
-// console.log(num1);
+const ans1 = x + y * z;
+console.log(ans1);
 
-//引き算
-let num2 =20;
-num2 -= 10;
-console.log(num2);
+const ans2 = (x + y) * z;
+console.log(ans2);
 
-//掛け算
-let num3 =20;
-num3 *= 10;
-console.log(num3);
-
-//割り算
-let num4 =20;
-num4 /= 10;
-console.log(num4);
