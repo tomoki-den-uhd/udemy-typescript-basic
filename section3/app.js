@@ -1,7 +1,6 @@
-var x = 1;
-var y = 2;
-var z = 3;
-var ans1 = x + y * z;
-console.log(ans1);
-var ans2 = (x + y) * z;
-console.log(ans2);
+var firstName = 'Yuta';
+var lastName = 'Nakamura';
+var message1 = 'Hello! I am ' + firstName + ' ' + lastName;
+console.log(message1);
+var message2 = "Hello! I am ".concat(firstName, " ").concat(lastName, ".");
+console.log(message2);

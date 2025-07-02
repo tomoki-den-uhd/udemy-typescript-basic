@@ -1,10 +1,7 @@
-const x = 1;
-const y = 2;
-const z = 3;
+const firstName = 'Yuta';
+const lastName = 'Nakamura';
+const message1 = 'Hello! I am ' + firstName + ' ' + lastName;
+console.log(message1);
 
-const ans1 = x + y * z;
-console.log(ans1);
-
-const ans2 = (x + y) * z;
-console.log(ans2);
-
+const message2 = `Hello! I am ${firstName} ${lastName}.`;
+console.log(message2);
