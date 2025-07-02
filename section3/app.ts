@@ -1,21 +1,12 @@
-//後置演算子
-let num = 10;
-num++;
-// console.log(num);
+//Aさん
+//体重60kg
+//身長1.7m
 
-num--;
-// console.log(num);
+//BMI = 体重 / (身長(m) * 身長(m))
 
-//前置演算子
-++num;
-// console.log(num);
+const weight = 60;
+const height = 1.7;
+const BMI = weight / ( height * height);
 
---num;
-// console.log(num);
+console.log(`BMI: ${BMI}`);
 
-let num1 = 10;
-let num2 = 10;
-let ans1 = ++num1;
-let ans2 = num2++;
-console.log(ans1);
-console.log(ans2);
