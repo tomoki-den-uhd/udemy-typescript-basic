@@ -1,8 +1,4 @@
-let color: string = 'Red';
-console.log(color);
+const pi = 3.14;
+console.log(pi);
 
-color = 'Green';
-console.log(color);
-
-// let color: string = 'Blue';
-// color = 255;
+// pi = 3;
