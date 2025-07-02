@@ -1,26 +1,13 @@
-// let num = 10;
-let num = Math.floor(Math.random()*5) + 1;
+let x;
+console.log(x);
 
-//Math.random() * (max - min) + minを表している
-console.log(num);
+let item = null;
+console.log(item);
 
-switch (num) {
-    case 1:
-        console.log('大吉');
-        break;
-    case 2:
-        console.log('中吉');
-        break;
-    case 3:
-        console.log('小吉');
-        break;
-    case 4:
-        console.log('吉');
-        break;
-    case 5:
-        console.log('凶');
-        break;
-    default:
-        console.log('それ以外');
-        break;
+if (x === undefined) {
+    console.log('undifined');
+}
+
+if (item === null) {
+    console.log('null');
 }
