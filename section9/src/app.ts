@@ -1,9 +1,27 @@
-//プロパティを読み取り専用にする
+//メソッドを使う
 
 class User {
-    readonly name: string = 'Yuta Nakamura';
+    name: string = '';
     age: number = 0;
+
+    isAdult(): boolean {
+        return this.age >= 18;
+    }
+
+    setAge(age: number) {
+        this.age = age;
+    }
 }
 
-const nakamura = new User;
-// nakamura.name = 'Olivia'; //読み取り専用のプロパティに代入はできないerror
+const olivia = new User();
+console.log(olivia.age);
+console.log(olivia.isAdult());
+
+olivia.setAge(23);
+console.log(olivia.age);
+console.log(olivia.isAdult());
+
+const liam = new User;
+liam.setAge(18);
+console.log(liam.age);
+console.log(liam.isAdult());
