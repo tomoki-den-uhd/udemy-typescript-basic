@@ -1,5 +1,5 @@
 "use strict";
-//クラスの継承
+//子クラスは親クラスを上書きできる
 class User {
     name = '';
     age = 0;
@@ -17,8 +17,9 @@ class AdminUser extends User {
     sayAdminRole() {
         console.log(`My admin role is ${this.adminRole}.`);
     }
+    isAdult() {
+        return true;
+    }
 }
-const emma = new AdminUser('Emma', 16);
-console.log(emma.name);
+const emma = new AdminUser('Emma', 0);
 console.log(emma.isAdult());
-emma.sayAdminRole();

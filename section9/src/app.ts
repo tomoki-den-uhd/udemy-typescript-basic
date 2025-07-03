@@ -1,4 +1,4 @@
-//クラスの継承
+//子クラスは親クラスを上書きできる
 
 class User {
     name: string = '';
@@ -22,12 +22,16 @@ class AdminUser extends User {
     public sayAdminRole() {
         console.log(`My admin role is ${this.adminRole}.`)
     }
+
+    public override isAdult(): boolean {
+        return true;
+    }
 }
 
-const emma = new AdminUser('Emma', 16);
-console.log(emma.name);
+const emma = new AdminUser('Emma', 0);
 console.log(emma.isAdult());
-emma.sayAdminRole();
+
+
 
 
 
