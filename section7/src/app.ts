@@ -1,49 +1,73 @@
-const colors = ['Red', 'Green', 'Blue'];
-console.log(colors);
-colors.push('Black');
-console.log(colors);
-
-colors.unshift('White');
-console.log(colors);
-
-colors[1] = 'Aka';
-console.log(colors);
-
-const insertArr = ['a', 'b', 'c'];
-insertArr.splice(1, 0, 'D');
-insertArr.splice(2, 0, 'X', 'Y', 'Z');
-console.log(insertArr);
-
-insertArr.splice(2,2); //インデックス2から2つ削除
-console.log(insertArr);
-
-//56.配列を操作しよう　動画4:58の途中
-
-//結合方法
-const arr1 = ['a', 'b', 'c'];
-const arr2 = ['d', 'e', 'f'];
-const mergedArr = arr1.concat(arr2);
-console.log(mergedArr);
-
-console.log(arr1);
-console.log(arr2);
-
-//先頭を削除
-const arr3 = ['a', 'b', 'c'];
-arr3.shift();
-console.log(arr3);
-
-//末尾を削除
-arr3.pop();
-console.log(arr3);
-
-//スプレッド構文
-const arr4 = [1, 2, 3];
-const arr5 = [4, 5, 6, ...arr4];
-console.log(arr5);
+// オブジェクト(連想配列)
+// いくつかの値をまとめたデータ
+// 1つの変数名でデータをまとめて入れておける
+// プロパティ名と式で一つの要素になる
 
 
+// name = 'nakamura' 
+// name = プロパティ名(キー)
+// 'nakamura'  = 式(値)
+
+const user = {
+    name: 'Yuta Nakamura',
+    gender: 'man',
+    age: 21
+};
+
+//ドット記法を使って取り出す
+console.log(user.name);
+console.log(user.gender);
+console.log(user.age);
+
+//ブラケット記法を使って取り出す
+console.log(user['name']);
+console.log(user['gender']);
+console.log(user['age']);
+
+user.age =22;
+console.log(user.age);
 
 
+user['age'] = 23;
+console.log(user['age']);
+
+//プロパティの個数を求める
+console.log(Object.keys(user).length);
+
+//プロパティの一覧を取得
+console.log(Object.keys(user));
+
+//型を明示的に示したい場合
+const user2: {
+    name: string,
+    gender: string,
+    age: number
+} = {
+    name: 'Yuta Nakamura',
+    gender: 'man',
+    age: 20
+};
+// user2.age = '23'; //NG
+// user2.prefecture = 'Tokyo' //NG
+
+console.log(user2.name);
+console.log(user2.gender);
+console.log(user2.age);
 
 
+//インターフェイス宣言でオブジェクトの型をあらかじめ宣言できる
+interface UserObj {
+    name: string,
+    gender: string,
+    age?: number
+}
+
+const user3: UserObj = {
+    name: 'Yuta Nakamura',
+    gender: 'man',
+    // age: 20
+};
+
+console.log(user3.name);
+console.log(user3.gender);
+console.log(user3.age);
