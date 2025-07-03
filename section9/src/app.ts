@@ -1,8 +1,9 @@
-//コンストラクタを使おう
+//アクセシビリティ修飾子　public private
+//例えばageを出力しないという要件がある時にprivateを使える
 
 class User {
-    readonly name: string = '';
-    age: number = 0;
+    name: string = '';
+    private age: number = 0;
 
     //関数(メソッド)
     constructor(name: string, age: number) {
@@ -10,20 +11,17 @@ class User {
         this.age = age;
     }
 
-    isAdult(): boolean {
+    public isAdult(): boolean {
         return this.age >=18;
     }
 
-    // コンストラクタにはreadonlyでも代入できるが、それ以外はできない
-    // setName(name:string) {
-    //     this.name = name;
-    // }
 }
 
 const olivia = new User('Olivia', 23);
-
 console.log(olivia.name);
-console.log(olivia.age);
+// console.log(olivia.age); //error
 console.log(olivia.isAdult());
+
+
 
 

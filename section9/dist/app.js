@@ -1,5 +1,6 @@
 "use strict";
-//コンストラクタを使おう
+//アクセシビリティ修飾子　public private
+//例えばageを出力しないという要件がある時にprivateを使える
 class User {
     name = '';
     age = 0;
@@ -14,5 +15,5 @@ class User {
 }
 const olivia = new User('Olivia', 23);
 console.log(olivia.name);
-console.log(olivia.age);
+// console.log(olivia.age); //error
 console.log(olivia.isAdult());
