@@ -1,5 +1,5 @@
 "use strict";
-//子クラスは親クラスを上書きできる
+//コンストラクタも子クラスは親クラスを上書きできる
 class User {
     name = '';
     age = 0;
@@ -14,6 +14,10 @@ class User {
 }
 class AdminUser extends User {
     adminRole = 1;
+    constructor(name, age, adminRole) {
+        super(name, age);
+        this.adminRole = adminRole;
+    }
     sayAdminRole() {
         console.log(`My admin role is ${this.adminRole}.`);
     }
@@ -21,5 +25,7 @@ class AdminUser extends User {
         return true;
     }
 }
-const emma = new AdminUser('Emma', 0);
+const emma = new AdminUser('Emma', 0, 2);
+console.log(emma.name);
+emma.sayAdminRole();
 console.log(emma.isAdult());
