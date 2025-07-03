@@ -1,6 +1,5 @@
 "use strict";
-//アクセシビリティ修飾子　public private
-//例えばageを出力しないという要件がある時にprivateを使える
+//クラス宣言はインスタンスの型を作る
 class User {
     name = '';
     age = 0;
@@ -13,7 +12,7 @@ class User {
         return this.age >= 18;
     }
 }
+//oliviaの方はUser型になる
+//new Userの型はUser型
 const olivia = new User('Olivia', 23);
-console.log(olivia.name);
-// console.log(olivia.age); //error
-console.log(olivia.isAdult());
+const lian = new User('Liam', 25);
