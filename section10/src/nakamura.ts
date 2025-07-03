@@ -1,2 +1,4 @@
-export const name = 'Nakamura';
-export const age = 20;
+const name = 'Nakamura';
+const age = 20;
+
+export {name as myName, age};
