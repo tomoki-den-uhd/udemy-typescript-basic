@@ -1,14 +1,11 @@
 "use strict";
-//for...of
-//iterableオブジェクト　 = 反復可能オブジェクト　　配列や文字列
-//配列や文字列を取り出すのにfor ofが使える
-const colors = ['Red', 'Green', 'Blue'];
-for (const color of colors) {
-    console.log(color);
+//演習　
+const scores = [100, 90, 80, 70, 60];
+let sumScore = 0;
+let averageScore = 0;
+for (let i = 0; i < scores.length; i++) {
+    sumScore += scores[i];
 }
-;
-const str = 'TypeScript';
-for (const character of str) {
-    console.log(character);
-}
-;
+averageScore = sumScore / scores.length;
+console.log(`合計値: ${sumScore}`);
+console.log(`平均値: ${averageScore}`);
