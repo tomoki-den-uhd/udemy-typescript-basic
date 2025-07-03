@@ -1,5 +1,5 @@
 "use strict";
-//クラス宣言はインスタンスの型を作る
+//クラスの継承
 class User {
     name = '';
     age = 0;
@@ -12,7 +12,13 @@ class User {
         return this.age >= 18;
     }
 }
-//oliviaの方はUser型になる
-//new Userの型はUser型
-const olivia = new User('Olivia', 23);
-const lian = new User('Liam', 25);
+class AdminUser extends User {
+    adminRole = 1;
+    sayAdminRole() {
+        console.log(`My admin role is ${this.adminRole}.`);
+    }
+}
+const emma = new AdminUser('Emma', 16);
+console.log(emma.name);
+console.log(emma.isAdult());
+emma.sayAdminRole();

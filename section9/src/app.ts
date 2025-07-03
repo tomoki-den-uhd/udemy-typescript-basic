@@ -1,4 +1,4 @@
-//クラス宣言はインスタンスの型を作る
+//クラスの継承
 
 class User {
     name: string = '';
@@ -16,10 +16,21 @@ class User {
 
 }
 
-//oliviaの方はUser型になる
-//new Userの型はUser型
-const olivia = new User('Olivia', 23);
-const lian: User = new User('Liam', 25);
+
+class AdminUser extends User {
+    adminRole: number = 1;
+    public sayAdminRole() {
+        console.log(`My admin role is ${this.adminRole}.`)
+    }
+}
+
+const emma = new AdminUser('Emma', 16);
+console.log(emma.name);
+console.log(emma.isAdult());
+emma.sayAdminRole();
+
+
+
 
 
 
